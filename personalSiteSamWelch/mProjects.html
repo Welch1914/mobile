@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<!--
+  	Author    : Sam Welch
+    Document   : mProject.html
+    Created on : october 30th, 2013
+    Description: This is the projects page. This has exambles of several of my projects on it.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>Projects</title>
+  
+   <!--Imports all css and mobile javascript-->
+    <link rel="stylesheet" href="css/mstyles.css"/>
+  <link rel="stylesheet" href="themes/myTheme.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+   
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="page3">
+    <div data-theme="a" data-role="header">
+        <h3>
+            My Projects
+        </h3>
+    </div>
+    <div data-role="content">
+    	<!--My peronal logo image-->
+        <div id="logo">
+        <img src="images/logo.png" alt="logo">
+        </div>
+        
+         <!--This is a unique nav bar for projects with links to index, about, services and contact, plus a back button-->
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="mIndex.html" data-transition="flip" data-theme="" data-icon="home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="mAbout.html" data-transition="flip" data-theme="" data-icon="info">
+                        About Me
+                    </a>
+                </li>
+                <li>
+                    <a href="mServices.html" data-transition="flip" data-theme="" data-icon="gear">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="mContact.html" data-transition="flip" data-theme="" data-icon="info">
+                        Contact Me
+                    </a>
+                </li>
+                <li>
+                     <a data-direction="reverse" data-rel="back" data-icon="arrow-l">
+                     	Back
+                     	</a>
+                </li>
+            </ul>
+        </div>
+        <h2>
+        <!--Content holds all of the main features inside of main, that change page to page-->
+				<div id="content">
+					
+					<!--Image and text(in h2 and p tags) of project 1(website)-->
+					<!-- Image auto sizes to an appropriate size, per platform-->
+					<div id="proj1">
+						<h2>Website</h2>
+						<p>This project is my most recent completed piece of work, and as you may have notice, it is this site.  </p>
+						<a href="https://github.com/Welch1914/carConcept" title="webimage"><img src="images/website.PNG"/></a>
+						
+					</div><!--end of proj1-->
+					
+					<!--Image and text(in h2 and p tags) of project 2(Database)-->
+					<!-- Image auto sizes to an appropriate size, per platform-->
+					<div id="proj2">
+						<h2>Database</h2>
+						<p>This is a project that involves finding specific information out of a database using sql in IBM: DB2, in seemingly more difficult queries</p>
+						<a href="https://github.com/Welch1914/databaseWorkForClass" title="webimage"><img src="images/database.PNG"/></a>
+					</div><!--end of proj2-->
+					
+					<!--Image and text(in h2 and p tags) of project 3(java)-->
+					<!-- Image auto sizes to an appropriate size, per platform-->
+					<div id="proj3">
+						<h2>Object Oriented(Java)</h2>
+						<p>Part of an object oriented project that was done in Java, with Bluej, for a project</p>
+						<a href="https://github.com/Welch1914/carConcept" title="webimage"><img src="images/java.PNG"/></a>
+					
+					</div><!--end of proj3-->
+					
+				</div><!--end of Content-->
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div id="copyright">
+				<small>&copy; 2013 Sam Welch</small>
+			</div><!--end of copyright-->
+    </div>
+    </div>
+</div>
+</body>
+</html>

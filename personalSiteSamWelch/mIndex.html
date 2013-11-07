@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+  	Author    : Sam Welch
+    Document   : mIndex.html
+    Created on : October 29th, 2013
+    Description: This is the home page of the site. User will be direct here by default upon dection of a mobile device.
+-->
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>Sam's Mobile Main Page</title>
+  
+   <!--Imports all css and mobile javascript-->
+    <link rel="stylesheet" href="css/mstyles.css"/>
+    <link rel="stylesheet" href="themes/myTheme.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+   
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="page1">
+    <div data-theme="a" data-role="header">
+        <h3>
+            Sam's Site
+        </h3>
+    </div>
+    <div data-role="content" >
+    	
+    	<!--My peronal logo image-->
+    	<div id="logo">
+        <img src="images/logo.png" alt="logo">
+        </div>
+        
+        <!--This is my greeting to the user-->
+        <div id="greet">
+        <h3>
+            Welcome to my Home on your Phone
+        </h3>
+        </div>
+         <!--This is a unique nav bar for services with links to about, projects, services and contact-->
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="mAbout.html" data-transition="flip" data-theme="" data-icon="info">
+                        About Me
+                    </a>
+                </li>
+                <li>
+                    <a href="mProjects.html" data-transition="fade" data-theme="" data-icon="star">
+                       Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="mServices.html" data-transition="flip" data-theme="" data-icon="gear">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="mContact.html" data-transition="flip" data-theme="" data-icon="info">
+                        Contact Me
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <a href="home.html" data-transition="none">
+                To Full Screen Site
+            </a>
+        </div>
+        <div class="slider">
+								<ul>
+									<li class='active'><img src="images/website.PNG" class="slider_img" /></li>
+									<li><img src="images/database.PNG" class="slider_img" /></li>
+									<li><img src="images/java.PNG" class="slider_img" /></li>
+								</ul>
+							</div>
+							<div class="toolbars">
+								<button onclick="window.slider.previous()">Previous</button>
+								<button onclick="window.slider.next()">Next</button>
+							</div>
+							<script>
+							
+								$(document).ready( function($){
+								
+									var slider = $('.slider').find('ul');
+									
+									var transition = 2500;
+									
+									$( slider ).find('li.active').show();
+									
+									window.slider = {
+										previous: function(){
+											var current = $( slider ).find( 'li.active' );
+											var prevElement = $( current ).prev('li');
+												
+											if( prevElement.length != 0 ){
+												$( current ).removeClass('active').fadeOut( transition );
+												$( prevElement ).addClass('active').fadeIn( transition );
+											}
+										},
+										next: function(){
+											var current = $( slider ).find( 'li.active' );
+											var nextElement = $( current ).next('li');
+												
+											if( nextElement.length != 0 ){
+												$( current ).removeClass('active').fadeOut( transition );
+												$( nextElement ).addClass('active').fadeIn( transition );
+											}
+										}
+									};
+								});
+							</script>
+					</div><!--end of feature-->
+    </div>
+    
+    
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div id="copyright">
+				<small>&copy; 2013 Sam Welch</small>
+			</div><!--end of copyright-->
+    </div>
+
+</body>
+</html>

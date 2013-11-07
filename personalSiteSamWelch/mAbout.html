@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+  	Author    : Sam Welch
+    Document   : mAbout.html
+    Created on : october 29th, 2013
+    Description: This is the about page. This has information about me(Sam Welch) on it.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>about me</title>
+  
+  
+  <!--Imports all css and mobile javascript-->
+  <link rel="stylesheet" href="css/mstyles.css"/>
+ <link rel="stylesheet" href="themes/myTheme.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="page2">
+    <div data-theme="a" data-role="header">
+        <h3>
+            About Me
+        </h3>
+    </div>
+    <div data-role="content">
+    	<!--My peronal logo image-->
+        <div id="logo">
+        <img src="images/logo.png" alt="logo">
+        </div>
+        
+         <!--This is a unique nav bar for services with links to index, projects, services and contact, plus a back button-->
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="mIndex.html" data-transition="flip" data-theme="" data-icon="home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="mProjects.html" data-transition="flip" data-theme="" data-icon="star">
+                       Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="mServices.html" data-transition="flip" data-theme="" data-icon="gear">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="mContact.html" data-transition="flip" data-theme="" data-icon="info">
+                        Contact Me
+                    </a>
+                </li>
+                <li>
+                     <a data-direction="reverse" data-rel="back" data-icon="arrow-l">
+                     	Back
+                     	</a>
+
+                </li>
+            </ul>
+        </div>
+        <div id = "myPic" >
+        <img src="images/Sam Welch.png" alt="A 'lovely' picture of me">
+        </div>
+        <div id="aboutContent">
+						<h2>About Me:</h2>
+						<!--text in p tags-->
+						<div id="personal">
+							<p>Name: Samuel E. Welch</p>
+							<p>Born: January 15th, 2013</p>
+							<p>Nation of Origin: Canada </p>
+							<p>Hometown: Barrie, Ontario</p>
+						</div><!--end of personal-->
+						<!--text in a h2 tag and p tags-->
+						<div id="bio">
+							<h3>Bio</h3>
+							<p>I was born in Barrie, Ontario, and I have lived there exclusively so far. I have family that is crazy, and friends that match the family.
+								I went to Cundles Heights E.S, Andrew Hunter E.S, Barrie Central Collegiate and now Georgian College. I have worked as a lighting technitian at 
+								Barrie Central and the guy behind the counter at an internet café. I am mildy addicted to gaming and to the internet, though the mild part might be an understatement, seeing as 
+								I am in an industry that is rather important to both of those things.</p>	
+						</div>
+						<!--text in h3 tag and p tags-->
+						<div id="edu">
+							<h3>Education</h3>
+							<p>Georgian Collage<p>
+							<p>Computer Programmer Analyst program <br>-3 semesters</p>
+							
+						</div><!--end of personal-->
+						<!--A button linked to a pdf that contains my résumé-->
+						<div id ="cv">
+							<p><a href="pdfs/Résumé.pdf" class="button">View Résumé</a></p>
+						</div><!--end of cv-->
+						
+					</div><!--end of bio-->
+					
+				</div><!--end of Content-->
+        
+        
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div id="copyright">
+				<small>&copy; 2013 Sam Welch</small>
+			</div><!--end of copyright-->
+    </div>
+    </div>
+</div>
+</body>
+</html>

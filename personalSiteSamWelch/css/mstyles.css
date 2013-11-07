@@ -1,0 +1,113 @@
+/* 
+ * 	 Author     : Sam Welch
+ *   Document   : mstyles
+ *   Created on : October 30th, 2013
+ *   Description: Uses css to format the mobile html pages, and look more professional .
+*/
+
+
+/*
+ * Centers the logo
+ */
+#logo{
+	
+	text-align:center;
+}
+/*
+ * Centers text on mIndex.html
+ */
+#greet{
+	text-align: center;
+}
+
+/*
+ * *******SLIDER STARTS HERE
+ *  The following css make the slider on page mIndex.html function properly aswell as center and adjust its size.
+ * 
+ */
+img.slider_img {
+	width: 100%;
+	height: 100%;
+	
+}
+.slider ul {
+	
+	margin: 0 auto 0 auto;
+	padding: 0;
+	width: 100%;
+	
+	position: relative;
+}
+.slider li {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;	
+	
+	display: none;
+}
+.slider {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	
+	padding: 5px;
+	border: 1px solid #DDD;
+}
+.toolbars {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*
+ * *************SLIDER ENDS HERE
+ * 
+ */
+
+/*
+ * make the picture on the mAbout.html page centered and sizes it properly
+ */
+#myPic{
+	margin: 10px;
+	
+	text-align:center;
+}
+/*
+ * make the picture on the mAbout.html page centered and sizes it properly
+ */
+#myPic img{
+	width: 200px;
+	height: 160px;
+	text-align:center;
+}
+
+/*
+ * Sizes and adjusts the size of the three images on mProjects.html page
+ */
+#proj1 img, #proj2 img, #proj3 img{
+	margin: 0 auto 0 auto;
+	padding: 0;
+	width: 100%;
+}
+/*
+ * Centers the text on the mAbout.html, mProjects.html, mConact.html and mServices.html pages
+ */
+#aboutContent, #content, #mess, #serve{
+	text-align:center;
+	margin: 0 auto;
+}
+
+/*
+ * centers text on the mContact Page;
+ */
+#socialContact, #contactInfo{
+	text-align:center;
+}
+
+/*
+ * creates a simple border on the mContact.html page for the keep connected group
+ */
+#border{
+	border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
